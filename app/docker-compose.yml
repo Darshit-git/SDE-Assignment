@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: CSV_Service
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/csvScannerDB
+      - PORT=3000
+    depends_on:
+      - mongo
+
+  mongo:
+    container_name: MongoDB
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    logging:
+      driver: none
+    environment:
+      - MONGO_LOGLEVEL=0
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
