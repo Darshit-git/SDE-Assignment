@@ -92,7 +92,9 @@ Retrieve the status of a previously submitted image processing request.
             "outputUrls":["<url1>", "<url2>", ...] 
           },
           ...
-        ]
+        ],
+      "createdAt": "<timeStamp>",
+      webhookURL: "<URL>"
       }
       ```
 
