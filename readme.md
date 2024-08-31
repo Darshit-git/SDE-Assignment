@@ -94,7 +94,7 @@ Retrieve the status of a previously submitted image processing request.
           ...
         ],
       "createdAt": "<timeStamp>",
-      webhookURL: "<URL>"
+      "webhookURL": "<URL>"
       }
       ```
 
