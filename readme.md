@@ -12,7 +12,7 @@ docker compose up --build
 Base Entrypoint: http://localhost:3000//api/images/ (Not found will be shown)
 
 ### Notes: 
-- Please make sure that your local ports **27017** and **3000** are free as they will be used by mongoDB and app containers**
+- Please make sure that your local ports **27017** and **3000** are free as they will be used by mongoDB and app containers.
 - Images will not be uploaded anywhere, an upload function is called which just sleeps for a fix time period to simulate the uploading process.
 
 ## Testing
