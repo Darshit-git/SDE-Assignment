@@ -59,7 +59,7 @@ The Image Processing System is designed to handle bulk image processing requests
 
 ### 3.2 Database
 
-![Database Schema](./databaseSchema.png)
+![Database Schema](../diagrams/databaseSchema.png)
 
 #### 3.2.1 Models (imageRequest.js)
 
